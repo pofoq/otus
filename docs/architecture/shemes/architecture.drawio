@@ -1,0 +1,128 @@
+<mxfile host="drawio-plugin" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" modified="2025-01-28T21:36:36.304Z" etag="q_-HTyiXm3dej5EA35nD" version="22.1.22" type="embed">
+  <diagram name="ER Diagram" id="DqlgzqoTB91BJFugSPi0">
+    <mxGraphModel dx="2138" dy="1287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cDcAgVE76lgruSD-sZZl-52" target="17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-52" value="Frontend (React)" style="shape=rectangle;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="50" y="40" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cDcAgVE76lgruSD-sZZl-55" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-55" value="Microservices" style="shape=swimlane;horizontal=0;startSize=20;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="770" y="50" width="300" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-57" value="User Service with Auth Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="20" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-58" value="Project Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="90" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-59" value="Task Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="160" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-60" value="Comment Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="230" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-61" value="Notification Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="300" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-62" value="File Storage Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="370" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-63" value="Integration Service" style="shape=rectangle;fillColor=#f8cecc;" parent="cDcAgVE76lgruSD-sZZl-55" vertex="1">
+          <mxGeometry x="30" y="440" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-65" value="Databases" style="shape=swimlane;horizontal=0;startSize=20;fillColor=#e1d5e7;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="50" width="200" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-67" value="User DB (Postgre)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="20" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-68" value="Project DB (Postgre)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="90" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-69" value="Task DB (Postgre)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="160" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-70" value="Comment DB (MongoDB)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="230" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-71" value="Notification DB (MongoDB)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="300" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-72" value="File DB (MongoDB)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="370" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-73" value="Integration DB (MongoDB)" style="shape=cylinder;fillColor=#ffffff;" parent="cDcAgVE76lgruSD-sZZl-65" vertex="1">
+          <mxGeometry x="30" y="440" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-75" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-57" target="cDcAgVE76lgruSD-sZZl-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-76" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-58" target="cDcAgVE76lgruSD-sZZl-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-77" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-59" target="cDcAgVE76lgruSD-sZZl-69" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-78" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-60" target="cDcAgVE76lgruSD-sZZl-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-79" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-61" target="cDcAgVE76lgruSD-sZZl-71" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-80" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-62" target="cDcAgVE76lgruSD-sZZl-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-81" style="edgeStyle=elbowEdgeStyle;endArrow=block;" parent="1" source="cDcAgVE76lgruSD-sZZl-63" target="cDcAgVE76lgruSD-sZZl-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cDcAgVE76lgruSD-sZZl-82" value="External APIs (Telegram,&#xa; Google Docs, etc.)" style="shape=cloud;fillColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="290" y="310" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="760" as="sourcePoint" />
+            <mxPoint x="383" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3" value="Telegram (mini app)" style="shape=rectangle;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="50" y="140" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6" target="cDcAgVE76lgruSD-sZZl-65" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.16;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6" target="cDcAgVE76lgruSD-sZZl-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Redis" style="shape=cloud;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="570" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="7" target="cDcAgVE76lgruSD-sZZl-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="RabbitMQ" style="shape=cylinder;fillColor=#ffe6cc;" parent="1" vertex="1">
+          <mxGeometry x="1290" y="630" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Gateway API" style="shape=rectangle;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="430" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.134;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="17" target="cDcAgVE76lgruSD-sZZl-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
