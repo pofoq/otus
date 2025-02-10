@@ -94,5 +94,14 @@
 * Сделали CJM (Customer Journey map)
 * Сравнили redux и Context. Выбрали Context
 
-  **03.02.2025**
-  * Совместное программирование микросервиса IssueService, создали доменную модель и репозиторий
+**03.02.2025**
+* Совместное программирование микросервиса IssueService, создали доменную модель и репозиторий
+
+**05.02.2025**
+* Рассмотрели front shadecn размещение компонентов flex и grid layout.
+* Использование Tailwind css в проекте
+
+**10.02.2025**
+* Проверили установку make и развертывание проекта в windows с помощью docker-compose.
+* Развертывание баз, сервисов и фронта: docker-compose.infra.yml docker-compose.services.yml docker-compose.frontend.yml  
+
