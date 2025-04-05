@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F190F114-F79
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{F36C993E-BD34-4ACB-9121-E87F0EB24351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonContracts", "src\BuildingBlocks\CommonContracts\CommonContracts.csproj", "{AF576B94-0CA7-4F1C-AC40-75213F8F1DA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonContracts", "src\BuildingBlocks\CommonContracts\CommonContracts.csproj", "{AF576B94-0CA7-4F1C-AC40-75213F8F1DA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus", "src\BuildingBlocks\EventBus\EventBus.csproj", "{60066E2B-1553-42C5-93A0-C5511CDCB701}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "src\BuildingBlocks\EventBus\EventBus.csproj", "{60066E2B-1553-42C5-93A0-C5511CDCB701}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{919DD523-B139-4996-B8E6-1FF6D098FE6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Api", "src\Services\UserService\UserService.Api\UserService.Api.csproj", "{EA44D81C-1C87-4A2A-9FC9-325B337873BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Api", "src\Services\UserService\UserService.Api\UserService.Api.csproj", "{EA44D81C-1C87-4A2A-9FC9-325B337873BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Domain", "src\Services\UserService\UserService.Domain\UserService.Domain.csproj", "{2E4BFF59-1671-47FC-93C6-4EE0FB0353F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Domain", "src\Services\UserService\UserService.Domain\UserService.Domain.csproj", "{2E4BFF59-1671-47FC-93C6-4EE0FB0353F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.DAL", "src\Services\UserService\UserService.DAL\UserService.DAL.csproj", "{2EAF1314-D09E-4201-B52B-1448EE7F6C0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.DAL", "src\Services\UserService\UserService.DAL\UserService.DAL.csproj", "{2EAF1314-D09E-4201-B52B-1448EE7F6C0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectService", "ProjectService", "{8A8D71A1-372B-4AD3-B2B5-26374937E5CD}"
 EndProject
@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHost", "src\Services\Pro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GatewayService", "GatewayService", "{E6F8D74B-1D55-4311-8832-6D8E5DA9BEB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService.Api", "src\Gateway\GatewayService.Api\GatewayService.Api.csproj", "{3CCC44C6-A02F-46FB-8D3F-019D0AD6A8D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayService.Api", "src\Gateway\GatewayService.Api\GatewayService.Api.csproj", "{3CCC44C6-A02F-46FB-8D3F-019D0AD6A8D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6429A45B-AB03-4A22-BE72-D97AC706697E}"
 EndProject
@@ -48,6 +48,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssueService.DAL", "src\Services\IssueService\IssueService.DAL\IssueService.DAL.csproj", "{E0EB3C9F-9BF7-4D02-2673-9B5A7BC87E44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssueService.Api", "src\Services\IssueService\IssueService.Api\IssueService.Api.csproj", "{5B948C2D-B0E8-2545-EF59-6863B9705575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileService", "FileService", "{53F1702C-F4D0-47E8-B469-47508E67E9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Api", "src\Services\FileService\FileService.Api\FileService.Api.csproj", "{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.DAL", "src\Services\FileService\FileService.DAL\FileService.DAL.csproj", "{F3D27FDE-808A-27C4-C961-78CA2E377CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Domain", "src\Services\FileService\FileService.Domain\FileService.Domain.csproj", "{28297514-B494-B48D-D9DF-0B73C05BADE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +123,18 @@ Global
 		{5B948C2D-B0E8-2545-EF59-6863B9705575}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B948C2D-B0E8-2545-EF59-6863B9705575}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B948C2D-B0E8-2545-EF59-6863B9705575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D27FDE-808A-27C4-C961-78CA2E377CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D27FDE-808A-27C4-C961-78CA2E377CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D27FDE-808A-27C4-C961-78CA2E377CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D27FDE-808A-27C4-C961-78CA2E377CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28297514-B494-B48D-D9DF-0B73C05BADE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28297514-B494-B48D-D9DF-0B73C05BADE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28297514-B494-B48D-D9DF-0B73C05BADE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28297514-B494-B48D-D9DF-0B73C05BADE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +162,10 @@ Global
 		{8C3A970F-1769-00C4-FA96-EB897EFE3879} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{E0EB3C9F-9BF7-4D02-2673-9B5A7BC87E44} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{5B948C2D-B0E8-2545-EF59-6863B9705575} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{53F1702C-F4D0-47E8-B469-47508E67E9DE} = {F190F114-F79F-47B4-A5FE-EB7078B4F8DF}
+		{4E8341D3-D626-9B7E-6992-FC2EBE91DEA5} = {53F1702C-F4D0-47E8-B469-47508E67E9DE}
+		{F3D27FDE-808A-27C4-C961-78CA2E377CB6} = {53F1702C-F4D0-47E8-B469-47508E67E9DE}
+		{28297514-B494-B48D-D9DF-0B73C05BADE9} = {53F1702C-F4D0-47E8-B469-47508E67E9DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1DF65D93-A07E-4A1B-A58C-75EAA0D1067B}
