@@ -1,3 +1,5 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using AutoMapper;
 using Bugtracker.DataAccess;
 using Bugtracker.WebHost.Mapping;
@@ -5,6 +7,7 @@ using BugTracker.DataAccess;
 using BugTracker.DataAccess.Repositories;
 using BugTracker.Domain;
 using DataAccess;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +22,7 @@ namespace PromoCodeFactory.WebHost
     public class Startup
     {
         public IConfiguration Configuration { get; }
+        public ILifetimeScope AutofacContainer { get; private set; }
 
         public Startup(IConfiguration configuration)
         {
@@ -45,12 +49,13 @@ namespace PromoCodeFactory.WebHost
               });
             });
 
-            services.AddScoped(typeof(IUnitOfWork), typeof(ProjectRepositoryUnitOfWork));
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped(typeof(IRepository<Project>), typeof(ProjectRepository));
+            // Сервисы теперь регистрируем в AutoFac
+            //services.AddScoped(typeof(IUnitOfWork), typeof(ProjectRepositoryUnitOfWork));
+            //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            //services.AddScoped(typeof(IRepository<Project>), typeof(ProjectRepository));
 
-            services.AddScoped<ProjectsEfDbInitializer>();
-            
+            //services.AddScoped<ProjectsEfDbInitializer>();
+
             services.AddDbContext<DataContext>(x =>
             {
                 x.UseSqlite("Filename=bugtracker-projects.sqlite");
@@ -76,9 +81,29 @@ namespace PromoCodeFactory.WebHost
             services.AddSwaggerGen();
         }
 
+        // ConfigureContainer is where you can register things directly
+        // with Autofac. This runs after ConfigureServices so the things
+        // here will override registrations made in ConfigureServices.
+        // Don't build the container; that gets done for you by the factory.
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            // Register your own things directly with Autofac here. Don't
+            // call builder.Populate(), that happens in AutofacServiceProviderFactory
+            // for you.
+            builder.RegisterType<AuthenticationService>().As<IAuthenticationService>();
+            builder.RegisterType<ProjectRepositoryUnitOfWork>().As<IUnitOfWork>();
+            builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>));
+            builder.RegisterType<ProjectRepository>().As<IRepository<Project>>();
+            builder.RegisterType<ProjectsEfDbInitializer>();
+        }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ProjectsEfDbInitializer dbInitializer)
         {
+            // If, for some reason, you need a reference to the built container, you
+            // can use the convenience extension method GetAutofacRoot.
+            this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
